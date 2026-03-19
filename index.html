@@ -2,120 +2,66 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Портфолио - Пантелеев Никита</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио | Главная</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-<header class="header">
-    <div class="container">
-        <h1>Пантелеев Никита Александрович</h1>
-        <p class="subtitle">Студент · Веб-технологии</p>
-    </div>
-</header>
-
-<nav class="nav">
-    <div class="container">
-        <ul>
-            <li><a href="#about">Обо мне</a></li>
-            <li><a href="#study">Учёба</a></li>
-            <li><a href="#skills">Навыки</a></li>
-            <li><a href="#interests">Интересы</a></li>
-            <li><a href="#projects">Проекты</a></li>
-            <li><a href="#contacts">Контакты</a></li>
-        </ul>
-    </div>
-</nav>
-
-<main class="container">
-
-    <section id="about" class="section">
-        <h2>Обо мне</h2>
-        <p>
-            Я студент второго курса, обучаюсь по направлению информационных систем.
-            Изучаю основы веб-разработки, HTML, CSS и принципы построения сайтов.
-        </p>
-        <p>
-            <strong>Цель:</strong> получить практические навыки веб-разработки и в дальнейшем
-            развиваться в сфере создания и дизайна сайтов.
-        </p>
-    </section>
-
-    <section id="study" class="section">
-        <h2>Учебная информация</h2>
-        <img src="stud_photo (1).png" alt="" srcset="">
-        <ul class="info-list">
-            <li><strong>Город:</strong> Павлодар</li>
-            <li><strong>Университет:</strong> Торайгыров университет</li>
-            <li><strong>Направление:</strong> Информационные системы</li>
-            <li><strong>Курс:</strong> 2</li>
-            <li><strong>Группа:</strong> ИС-202</li>
-            <li><strong>Учебный предмет:</strong> Веб-технологии</li>
-            <li><strong>Тип работы:</strong> Практическое портфолио</li>
-        </ul>
-    </section>
-
-    <section id="skills" class="section">
-        <h2>Навыки</h2>
-        <div class="skills">
-            <span>HTML5</span>
-            <span>CSS3</span>
-            <span>Основы адаптивной вёрстки</span>
-            <span>Работа с макетами</span>
-            <span>Структура веб-страниц</span>
-        </div>
-    </section>
-
-    <section id="interests" class="section">
-        <h2>Интересы и хобби</h2>
-        <ul class="info-list">
-            <li>Веб-дизайн и разработка сайтов</li>
-            <li>Изучение новых технологий</li>
-            <li>Графический дизайн</li>
-            <li>Саморазвитие</li>
-            <li>Просмотр обучающих видео</li>
-        </ul>
-    </section>
-
-    <section id="projects" class="section">
-        <h2>Проекты</h2>
-        <div class="projects">
-            <div class="project-card">
-                <h3>Учебный сайт</h3>
-                <p>
-                    Простой многостраничный сайт с использованием HTML и CSS.
-                    Реализована навигация и базовая стилизация.
-                </p>
+    <header class="header">
+        <div class="container header-inner">
+            <div>
+                <h1 class="logo">Пантелеев Никита</h1>
+                <p class="subtitle">Студент · Веб-технологии</p>
             </div>
 
-            <div class="project-card">
-                <h3>Форма обратной связи</h3>
-                <p>
-                    Вёрстка формы с полями ввода и кнопкой отправки.
-                </p>
-            </div>
+            <nav class="nav">
+                <a href="index.html" class="active">Главная</a>
+                <a href="about.html">О себе</a>
+                <a href="projects.html">Проекты</a>
+                <a href="contact.html">Контакты</a>
+            </nav>
+
+            <button class="theme-toggle" id="themeToggle">Сменить тему</button>
         </div>
-    </section>
+    </header>
 
-    <section id="contacts" class="section">
-        <h2>Контакты</h2>
-        <ul class="info-list">
-            <li><strong>Email:</strong> nikita@example.com</li>
-            <li><strong>Telegram:</strong> <a href="#">@n1kita.pont</a></li>
-            <li><strong>Instagram:</strong> <a href="https://www.instagram.com/nikmade.design">Тык</a></li>
-            <li><strong>GitHub:</strong> <a href="https://github.com/Nikmade-design/Universe2">Тык</a></li>
-        </ul>
-    </section>
+    <main class="container">
+        <section class="hero">
+            <div class="hero-text">
+                <h2>Добро пожаловать в моё портфолио</h2>
+                <p class="hero-greeting">
+                    Привет! Меня зовут Никита Пантелеев, я студент направления
+                    «Информационные системы» и изучаю веб-разработку.
+                </p>
+                <p>
+                    На этом сайте собрана краткая информация обо мне, моих навыках,
+                    учебных проектах и способах связи. Цель этого портфолио —
+                    показать мои первые шаги в создании современных веб-сайтов.
+                </p>
+                <a class="btn" href="about.html">Узнать больше обо мне</a>
+            </div>
 
-</main>
+            <div class="hero-image">
+                <img src="stud_photo (1).png" alt="Фото Пантелеева Никиты">
+            </div>
+        </section>
 
-<footer class="footer">
-    <div class="container">
-        <p>© 2026 Пантелеев Никита Александрович</p>
-    </div>
-</footer>
+        <section class="card">
+            <h2>Краткое описание</h2>
+            <p>
+                Я обучаюсь в Торайгыров университете, изучаю HTML, CSS,
+                основы адаптивной вёрстки и построение удобных интерфейсов.
+                Мне интересно развиваться в сфере веб-дизайна и фронтенд-разработки.
+            </p>
+        </section>
+    </main>
 
+    <footer class="footer">
+        <div class="container">
+            <p>© <span id="year"></span> nikmade-design</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
-
