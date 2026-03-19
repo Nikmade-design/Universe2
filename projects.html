@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио | Проекты</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container header-inner">
+            <div>
+                <h1 class="logo">Пантелеев Никита</h1>
+                <p class="subtitle">Студент · Веб-технологии</p>
+            </div>
+
+            <nav class="nav">
+                <a href="index.html">Главная</a>
+                <a href="about.html">О себе</a>
+                <a href="projects.html" class="active">Проекты</a>
+                <a href="contact.html">Контакты</a>
+            </nav>
+
+            <button class="theme-toggle" id="themeToggle">Сменить тему</button>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="card">
+            <h2>Мои проекты</h2>
+            <div class="projects">
+                <article class="project-card">
+                    <img src="stud_photo (1).png" alt="Скриншот проекта Учебный сайт">
+                    <h3>Учебный сайт-портфолио</h3>
+                    <p>
+                        Многостраничный сайт-портфолио, созданный с использованием
+                        HTML, CSS и JavaScript. Реализованы навигация,
+                        форма обратной связи и переключение темы.
+                    </p>
+                    <div class="project-links">
+                        <a href="#">Ссылка на проект</a>
+                        <a href="https://github.com/Nikmade-design/Universe2" target="_blank">Репозиторий</a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <img src="stud_photo (1).png" alt="Скриншот проекта Форма обратной связи">
+                    <h3>Форма обратной связи</h3>
+                    <p>
+                        Небольшой учебный проект по вёрстке формы с полями ввода,
+                        кнопкой отправки и аккуратным оформлением интерфейса.
+                    </p>
+                    <div class="project-links">
+                        <a href="#">Ссылка на проект</a>
+                        <a href="https://github.com/Nikmade-design/Universe2" target="_blank">Репозиторий</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>Будущие проекты</h2>
+            <ul class="info-list">
+                <li>Личный сайт-визитка с более сложной анимацией и адаптивным дизайном</li>
+                <li>Учебный интернет-магазин с карточками товаров</li>
+                <li>Мини-проект на JavaScript с интерактивными элементами</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© <span id="year"></span> nikmade-design</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
